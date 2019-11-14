@@ -7,7 +7,6 @@
   --light-color: #d0eff2;
   --danger-color: #f2293a;
   --success-color: #37a672;
-  --yellow: #f2be22;
 }
 
 * {
@@ -286,13 +285,6 @@ img {
   color: #fff;
 }
 
-.btn-yellow,
-.badge-yellow {
-  background: var(--yellow);
-  color: #333;
-  border: #ccc solid 1px;
-}
-
 .btn-white,
 .bg-white,
 .badge-white,
@@ -378,7 +370,7 @@ table th {
 }
 
 .navbar a:hover {
-  color: var(--yellow);
+  color: var(--light-color);
 }
 
 .navbar .welcome span {

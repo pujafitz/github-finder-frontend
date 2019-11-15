@@ -30,7 +30,7 @@ class App extends Component {
   searchUsers = async text => {
     this.setState({ loading: true });
     const res = await axios.get(
-      `http://finder.pujafitz.com/search/users?q=${text}`
+      `https://finder.pujafitz.com/search/users?q=${text}`
     );
     this.setState({ users: res.data.items, loading: false });
   };
@@ -38,7 +38,9 @@ class App extends Component {
   // Get single GitHub user
   getUser = async username => {
     this.setState({ loading: true });
-    const res = await axios.get(`http://finder.pujafitz.com/users/${username}`);
+    const res = await axios.get(
+      `https://finder.pujafitz.com/users/${username}`
+    );
     this.setState({ user: res.data, loading: false });
   };
 

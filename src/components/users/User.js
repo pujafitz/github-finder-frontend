@@ -58,7 +58,7 @@ const User = ({ match }) => {
         <div>
           {bio && (
             <Fragment>
-              <h3>Bio</h3>
+              <h3>Bio:</h3>
               <p>{bio}</p>
             </Fragment>
           )}
@@ -96,6 +96,10 @@ const User = ({ match }) => {
         <div className='badge badge-light'>Public Repos: {public_repos}</div>
         <div className='badge badge-dark'>Public Gists: {public_gists}</div>
       </div>
+      <br />
+      <h3 className='text-center'>
+        {name}'s 5 Most Recently Created Public Repositories:
+      </h3>
       <Repos repos={repos} />
     </Fragment>
   );

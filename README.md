@@ -1,68 +1,63 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# GitHub Finder
+
+![Screenshot](github_screenshot_jr.png)
+
+This app was created using React to learn and practice new skills and tools.
+
+At first, I created the app using stateful class-based components. Then the app was refactored using the state management library, Redux. Finally, I refactored again, using Hooks and the Context API (current production build).
+
+Version: 3.1.0
+
+## Contents
+
+    -Description
+    -Features
+    -Technologies
+    -Contributor
+    -Special Thanks
+    -Available Scripts
+
+## Decription
+
+This app allows a user to search GitHub's API. If the "Search" button is cicked without input, the user will be prompted to insert search parameters. The search will look for the input text in a GitHub user's name, username, and bio. The Search results are displayed below, with a new button appearing to Clear search results.
+
+When a user clicks the "More" button of any particular GitHub user, they are directed to that user's page within the app. The GitHub user page displays the user's information directly from the GitHub API, including the person's name, image, hireability, location, bio, username, website, company, a button to visit their GitHub profile, number of followers, number following, number of public repos, number of public gists, and finally, a list of the five most recently created public repos with links to access them.
+
+There are links to Home and About pages in the Navbar, as well as a "Back to Search" button, where the user's last search results (state) is still preserved until they choose to click the "Clear Search" button or enter new search parameters.
+
+## Features
+
+- CSS Styling (no framework like bootstrap)
+- Not found page, Clear Search button, Back to Search button
+
+## Technologies
+
+- HTML
+- CSS
+- JavaScript
+- Node.js
+- React (including Hooks & Context API)
+- Redux
+- AWS EC2 depoloyment
+
+## Contributor
+
+Puja Fitzpatrick: [GitHub Profile](https://github.com/pujafitz)
+
+## Special Thanks
+
+Jonathan Ray: [GitHub Profile](https://github.com/ray-jonathan)
 
 ## Available Scripts
 
+This project was created with [Create React App](https://github.com/facebook/create-react-app).
+
 In the project directory, you can run:
 
-### `npm start`
+#### `npm start`
 
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify

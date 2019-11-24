@@ -1,6 +1,6 @@
 # GitHub Finder
 
-![Screenshot](/github_screenshot_jr.png){:height="25%" width="25%"}
+![Screenshot](/github_screenshot_jr.png){:height="50%" width="50%"}
 
 This app was created using React to learn and practice new skills and tools.
 

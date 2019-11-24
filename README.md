@@ -1,6 +1,6 @@
 # GitHub Finder
 
-![Screenshot](/github_screenshot_jr.png){:height="50%" width="50%"}
+<img src="https://github.com/pujafitz/github-finder-frontend/blob/master/github_screenshot_jr.png" width="300">
 
 This app was created using React to learn and practice new skills and tools.
 

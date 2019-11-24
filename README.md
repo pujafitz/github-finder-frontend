@@ -1,6 +1,6 @@
 # GitHub Finder
 
-<img src="https://github.com/pujafitz/github-finder-frontend/blob/master/github_screenshot_jr.png" width="300">
+<img src="https://github.com/pujafitz/github-finder-frontend/blob/master/github_screenshot.png" width="300">
 
 This app was created using React to learn and practice new skills and tools.
 

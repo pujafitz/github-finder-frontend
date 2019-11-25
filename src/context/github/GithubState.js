@@ -46,12 +46,13 @@ const GithubState = props => {
       payload: res.data.items
     });
   };
+
   // Get User
   const getUser = async username => {
     setLoading();
     const res = await axios.get(
-      `https://api.github.com/users/${username}?client_id=${githubClientId}&client_secret=${githubClientSecret}`
-      // `https://finder.pujafitz.com/users/${username}`
+      // `https://api.github.com/users/${username}?client_id=${githubClientId}&client_secret=${githubClientSecret}`
+      `https://finder.pujafitz.com/users/${username}`
     );
     dispatch({
       type: GET_USER,
@@ -63,14 +64,15 @@ const GithubState = props => {
   const getUserRepos = async username => {
     setLoading(true);
     const res = await axios.get(
-      `https://api.github.com/users/${username}/repos?per_page=5&sort=created:asc&client_id=${githubClientId}&client_secret=${githubClientSecret}`
-      // `https://finder.pujafitz.com/users/${username}/repos?per_page=5&sort=created:asc`
+      // `https://api.github.com/users/${username}/repos?per_page=5&sort=created:asc&client_id=${githubClientId}&client_secret=${githubClientSecret}`
+      `https://finder.pujafitz.com/users/${username}/repos?per_page=5&sort=created:asc`
     );
     dispatch({
       type: GET_REPOS,
       payload: res.data
     });
   };
+
   // Clear Users
   const clearUsers = () => dispatch({ type: CLEAR_USERS });
 
